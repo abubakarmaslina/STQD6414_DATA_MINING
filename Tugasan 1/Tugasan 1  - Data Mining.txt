@@ -1,0 +1,432 @@
+
+R version 4.3.1 (2023-06-16 ucrt) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> Nama_Syarikat <- c("ABC", "Bookstore Timah", "Prasa", "Delta", "Alfa", "Gama",
++ "Bakeri Hasan", "Shel", "DV", "Viva", "Kedai Sate Ali", "Kedai Runcit Abu", "Kilang Apel",
++ "DM")
+> Nama_Syarikat
+ [1] "ABC"              "Bookstore Timah"  "Prasa"            "Delta"           
+ [5] "Alfa"             "Gama"             "Bakeri Hasan"     "Shel"            
+ [9] "DV"               "Viva"             "Kedai Sate Ali"   "Kedai Runcit Abu"
+[13] "Kilang Apel"      "DM"              
+> 
+> Pendapatan_Bulanan<- c(15214.32, 3126.60, 5211.10, 3000.00, 12431.11, 290000.00, 
++                        16321.00, 176342.11, 6251.99, 6011.23, 4321.67, 6743.28,
++                        167223.90, 26590.12)
+> 
+> Pendapatan_Bulanan
+ [1]  15214.32   3126.60   5211.10   3000.00  12431.11 290000.00  16321.00
+ [8] 176342.11   6251.99   6011.23   4321.67   6743.28 167223.90  26590.12
+> 
+> Bil_Pekerja<- c(4,3,1,1,2,1974,5,100,4,4,2,2,200,7)
+> Bil_Pekerja
+ [1]    4    3    1    1    2 1974    5  100    4    4    2    2  200    7
+> Kategori_Perniagaan<-c("P","P","S","P","P","P","S","B","S","S","S","S","B","P")
+> Kategori_Perniagaan
+ [1] "P" "P" "S" "P" "P" "P" "S" "B" "S" "S" "S" "S" "B" "P"
+> Modal_Bulanan<- c(5000.00, 1530.00, 3211.00, 1444.00, 4372.11, 100000.00, 6421.66,
++                   54320.00, 4421.00, 5432.31, 1500.00, 2000.00, 48761.00, 6000.00)
+> Modal_Bulanan
+ [1]   5000.00   1530.00   3211.00   1444.00   4372.11 100000.00   6421.66
+ [8]  54320.00   4421.00   5432.31   1500.00   2000.00  48761.00   6000.00
+> Status_Syarikat <- (0,0,0,0,0,1,0,1,0,0,0,0,1,0)
+Error: unexpected ',' in "Status_Syarikat <- (0,"
+> Status_Syarikat
+[1] 0 0 0
+> 
+> Status_Penarafan<-c("A","B","B-","B","A+","A+","A","A+","C","C-","B-","B","A+","A")
+> Status_Penarafan
+ [1] "A"  "B"  "B-" "B"  "A+" "A+" "A"  "A+" "C"  "C-" "B-" "B"  "A+" "A" 
+> Nama_Syarikat <- c("ABC", "Bookstore Timah", "Prasa", "Delta", "Alfa", "Gama",
++ "Bakeri Hasan", "Shel", "DV", "Viva", "Kedai Sate Ali", "Kedai Runcit Abu", "Kilang Apel",
++ "DM")
+> Nama_Syarikat
+ [1] "ABC"              "Bookstore Timah"  "Prasa"            "Delta"           
+ [5] "Alfa"             "Gama"             "Bakeri Hasan"     "Shel"            
+ [9] "DV"               "Viva"             "Kedai Sate Ali"   "Kedai Runcit Abu"
+[13] "Kilang Apel"      "DM"              
+> 
+> Pendapatan_Bulanan<- c(15214.32, 3126.60, 5211.10, 3000.00, 12431.11, 290000.00, 
++                        16321.00, 176342.11, 6251.99, 6011.23, 4321.67, 6743.28,
++                        167223.90, 26590.12)
+> 
+> Pendapatan_Bulanan
+ [1]  15214.32   3126.60   5211.10   3000.00  12431.11 290000.00  16321.00
+ [8] 176342.11   6251.99   6011.23   4321.67   6743.28 167223.90  26590.12
+> 
+> Bil_Pekerja<- c(4,3,1,1,2,1974,5,100,4,4,2,2,200,7)
+> Bil_Pekerja
+ [1]    4    3    1    1    2 1974    5  100    4    4    2    2  200    7
+> Kategori_Perniagaan<-c("P","P","S","P","P","P","S","B","S","S","S","S","B","P")
+> Kategori_Perniagaan
+ [1] "P" "P" "S" "P" "P" "P" "S" "B" "S" "S" "S" "S" "B" "P"
+> Modal_Bulanan<- c(5000.00, 1530.00, 3211.00, 1444.00, 4372.11, 100000.00, 6421.66,
++                   54320.00, 4421.00, 5432.31, 1500.00, 2000.00, 48761.00, 6000.00)
+> Modal_Bulanan
+ [1]   5000.00   1530.00   3211.00   1444.00   4372.11 100000.00   6421.66
+ [8]  54320.00   4421.00   5432.31   1500.00   2000.00  48761.00   6000.00
+> Status_Syarikat <- c(0,0,0,0,0,1,0,1,0,0,0,0,1,0)
+> Status_Syarikat
+ [1] 0 0 0 0 0 1 0 1 0 0 0 0 1 0
+> 
+> Status_Penarafan<-c("A","B","B-","B","A+","A+","A","A+","C","C-","B-","B","A+","A")
+> Status_Penarafan
+ [1] "A"  "B"  "B-" "B"  "A+" "A+" "A"  "A+" "C"  "C-" "B-" "B"  "A+" "A" 
+> mydata <- data.frame(Nama_Syarikat, Pendapatan_Bulanan, Bil_Pekerja, Kategori_Perniagaan, 
++ Modal_Bulanan, Status_Syarikat, Status_Penarafan)
+> mydata 
+      Nama_Syarikat Pendapatan_Bulanan Bil_Pekerja Kategori_Perniagaan Modal_Bulanan
+1               ABC           15214.32           4                   P       5000.00
+2   Bookstore Timah            3126.60           3                   P       1530.00
+3             Prasa            5211.10           1                   S       3211.00
+4             Delta            3000.00           1                   P       1444.00
+5              Alfa           12431.11           2                   P       4372.11
+6              Gama          290000.00        1974                   P     100000.00
+7      Bakeri Hasan           16321.00           5                   S       6421.66
+8              Shel          176342.11         100                   B      54320.00
+9                DV            6251.99           4                   S       4421.00
+10             Viva            6011.23           4                   S       5432.31
+11   Kedai Sate Ali            4321.67           2                   S       1500.00
+12 Kedai Runcit Abu            6743.28           2                   S       2000.00
+13      Kilang Apel          167223.90         200                   B      48761.00
+14               DM           26590.12           7                   P       6000.00
+   Status_Syarikat Status_Penarafan
+1                0                A
+2                0                B
+3                0               B-
+4                0                B
+5                0               A+
+6                1               A+
+7                0                A
+8                1               A+
+9                0                C
+10               0               C-
+11               0               B-
+12               0                B
+13               1               A+
+14               0                A
+> mydata1 <- arrange(mydata, Pendapatan_Bulanan)
+Error in arrange(mydata, Pendapatan_Bulanan) : 
+  could not find function "arrange"
+> mydata1 
+Error: object 'mydata1' not found
+> arrange(mydata, Pendapatan_Bulanan)
+Error in arrange(mydata, Pendapatan_Bulanan) : 
+  could not find function "arrange"
+> library(dplyr)
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.3.2 
+> arrange(mydata, Pendapatan_Bulanan)
+      Nama_Syarikat Pendapatan_Bulanan Bil_Pekerja Kategori_Perniagaan Modal_Bulanan
+1             Delta            3000.00           1                   P       1444.00
+2   Bookstore Timah            3126.60           3                   P       1530.00
+3    Kedai Sate Ali            4321.67           2                   S       1500.00
+4             Prasa            5211.10           1                   S       3211.00
+5              Viva            6011.23           4                   S       5432.31
+6                DV            6251.99           4                   S       4421.00
+7  Kedai Runcit Abu            6743.28           2                   S       2000.00
+8              Alfa           12431.11           2                   P       4372.11
+9               ABC           15214.32           4                   P       5000.00
+10     Bakeri Hasan           16321.00           5                   S       6421.66
+11               DM           26590.12           7                   P       6000.00
+12      Kilang Apel          167223.90         200                   B      48761.00
+13             Shel          176342.11         100                   B      54320.00
+14             Gama          290000.00        1974                   P     100000.00
+   Status_Syarikat Status_Penarafan
+1                0                B
+2                0                B
+3                0               B-
+4                0               B-
+5                0               C-
+6                0                C
+7                0                B
+8                0               A+
+9                0                A
+10               0                A
+11               0                A
+12               1               A+
+13               1               A+
+14               1               A+
+> high_income <- mydata$Pendapatan_Bulanan > 10000
+> high_income 
+ [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE
+> mydata4 <- mydata%>%mutate(High_Income=high_income)
+> mydata4 
+      Nama_Syarikat Pendapatan_Bulanan Bil_Pekerja Kategori_Perniagaan Modal_Bulanan
+1               ABC           15214.32           4                   P       5000.00
+2   Bookstore Timah            3126.60           3                   P       1530.00
+3             Prasa            5211.10           1                   S       3211.00
+4             Delta            3000.00           1                   P       1444.00
+5              Alfa           12431.11           2                   P       4372.11
+6              Gama          290000.00        1974                   P     100000.00
+7      Bakeri Hasan           16321.00           5                   S       6421.66
+8              Shel          176342.11         100                   B      54320.00
+9                DV            6251.99           4                   S       4421.00
+10             Viva            6011.23           4                   S       5432.31
+11   Kedai Sate Ali            4321.67           2                   S       1500.00
+12 Kedai Runcit Abu            6743.28           2                   S       2000.00
+13      Kilang Apel          167223.90         200                   B      48761.00
+14               DM           26590.12           7                   P       6000.00
+   Status_Syarikat Status_Penarafan High_Income
+1                0                A        TRUE
+2                0                B       FALSE
+3                0               B-       FALSE
+4                0                B       FALSE
+5                0               A+        TRUE
+6                1               A+        TRUE
+7                0                A        TRUE
+8                1               A+        TRUE
+9                0                C       FALSE
+10               0               C-       FALSE
+11               0               B-       FALSE
+12               0                B       FALSE
+13               1               A+        TRUE
+14               0                A        TRUE
+> Income_More_10k <- mydata$Pendapatan_Bulanan > 10000
+> Income_More_10k
+ [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE
+> 
+> mydata4 <- mydata%>%mutate(Income_More_10k=high_income)
+> mydata4 
+      Nama_Syarikat Pendapatan_Bulanan Bil_Pekerja Kategori_Perniagaan Modal_Bulanan
+1               ABC           15214.32           4                   P       5000.00
+2   Bookstore Timah            3126.60           3                   P       1530.00
+3             Prasa            5211.10           1                   S       3211.00
+4             Delta            3000.00           1                   P       1444.00
+5              Alfa           12431.11           2                   P       4372.11
+6              Gama          290000.00        1974                   P     100000.00
+7      Bakeri Hasan           16321.00           5                   S       6421.66
+8              Shel          176342.11         100                   B      54320.00
+9                DV            6251.99           4                   S       4421.00
+10             Viva            6011.23           4                   S       5432.31
+11   Kedai Sate Ali            4321.67           2                   S       1500.00
+12 Kedai Runcit Abu            6743.28           2                   S       2000.00
+13      Kilang Apel          167223.90         200                   B      48761.00
+14               DM           26590.12           7                   P       6000.00
+   Status_Syarikat Status_Penarafan Income_More_10k
+1                0                A            TRUE
+2                0                B           FALSE
+3                0               B-           FALSE
+4                0                B           FALSE
+5                0               A+            TRUE
+6                1               A+            TRUE
+7                0                A            TRUE
+8                1               A+            TRUE
+9                0                C           FALSE
+10               0               C-           FALSE
+11               0               B-           FALSE
+12               0                B           FALSE
+13               1               A+            TRUE
+14               0                A            TRUE
+> mydata3 <- arrange(mydata, Pendapatan_Bulanan)
+> mydata3
+      Nama_Syarikat Pendapatan_Bulanan Bil_Pekerja Kategori_Perniagaan Modal_Bulanan
+1             Delta            3000.00           1                   P       1444.00
+2   Bookstore Timah            3126.60           3                   P       1530.00
+3    Kedai Sate Ali            4321.67           2                   S       1500.00
+4             Prasa            5211.10           1                   S       3211.00
+5              Viva            6011.23           4                   S       5432.31
+6                DV            6251.99           4                   S       4421.00
+7  Kedai Runcit Abu            6743.28           2                   S       2000.00
+8              Alfa           12431.11           2                   P       4372.11
+9               ABC           15214.32           4                   P       5000.00
+10     Bakeri Hasan           16321.00           5                   S       6421.66
+11               DM           26590.12           7                   P       6000.00
+12      Kilang Apel          167223.90         200                   B      48761.00
+13             Shel          176342.11         100                   B      54320.00
+14             Gama          290000.00        1974                   P     100000.00
+   Status_Syarikat Status_Penarafan
+1                0                B
+2                0                B
+3                0               B-
+4                0               B-
+5                0               C-
+6                0                C
+7                0                B
+8                0               A+
+9                0                A
+10               0                A
+11               0                A
+12               1               A+
+13               1               A+
+14               1               A+
+> Income_More_10k <- mydata$Pendapatan_Bulanan > 10000
+> Income_More_10k
+ [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE
+> 
+> mydata4 <- mydata%>%mutate(Income_More_10k=high_income)
+> mydata4
+      Nama_Syarikat Pendapatan_Bulanan Bil_Pekerja Kategori_Perniagaan Modal_Bulanan
+1               ABC           15214.32           4                   P       5000.00
+2   Bookstore Timah            3126.60           3                   P       1530.00
+3             Prasa            5211.10           1                   S       3211.00
+4             Delta            3000.00           1                   P       1444.00
+5              Alfa           12431.11           2                   P       4372.11
+6              Gama          290000.00        1974                   P     100000.00
+7      Bakeri Hasan           16321.00           5                   S       6421.66
+8              Shel          176342.11         100                   B      54320.00
+9                DV            6251.99           4                   S       4421.00
+10             Viva            6011.23           4                   S       5432.31
+11   Kedai Sate Ali            4321.67           2                   S       1500.00
+12 Kedai Runcit Abu            6743.28           2                   S       2000.00
+13      Kilang Apel          167223.90         200                   B      48761.00
+14               DM           26590.12           7                   P       6000.00
+   Status_Syarikat Status_Penarafan Income_More_10k
+1                0                A            TRUE
+2                0                B           FALSE
+3                0               B-           FALSE
+4                0                B           FALSE
+5                0               A+            TRUE
+6                1               A+            TRUE
+7                0                A            TRUE
+8                1               A+            TRUE
+9                0                C           FALSE
+10               0               C-           FALSE
+11               0               B-           FALSE
+12               0                B           FALSE
+13               1               A+            TRUE
+14               0                A            TRUE
+> summary(mydata3)
+ Nama_Syarikat      Pendapatan_Bulanan  Bil_Pekerja     Kategori_Perniagaan
+ Length:14          Min.   :  3000     Min.   :   1.0   Length:14          
+ Class :character   1st Qu.:  5411     1st Qu.:   2.0   Class :character   
+ Mode  :character   Median :  9587     Median :   4.0   Mode  :character   
+                    Mean   : 52771     Mean   : 164.9                      
+                    3rd Qu.: 24023     3rd Qu.:   6.5                      
+                    Max.   :290000     Max.   :1974.0                      
+ Modal_Bulanan    Status_Syarikat  Status_Penarafan  
+ Min.   :  1444   Min.   :0.0000   Length:14         
+ 1st Qu.:  2303   1st Qu.:0.0000   Class :character  
+ Median :  4710   Median :0.0000   Mode  :character  
+ Mean   : 17458   Mean   :0.2143                     
+ 3rd Qu.:  6316   3rd Qu.:0.0000                     
+ Max.   :100000   Max.   :1.0000                     
+> hist(mydata3)
+Error in hist.default(mydata3) : 'x' must be numeric
+> attarct(mydata3)
+Error in attarct(mydata3) : could not find function "attarct"
+> attract(mydata3)
+Error in attract(mydata3) : could not find function "attract"
+> attach(mydata3)
+The following objects are masked _by_ .GlobalEnv:
+
+    Bil_Pekerja, Kategori_Perniagaan, Modal_Bulanan, Nama_Syarikat,
+    Pendapatan_Bulanan, Status_Penarafan, Status_Syarikat
+
+> hist(mydata3$Pendapatan_Bulanan)
+> hist(mydata3$Pendapatan_Bulanan)
+> hist(mydata3)
+Error in hist.default(mydata3) : 'x' must be numeric
+> hist(mydata3, Nama_Syarikat, Pendapatan_Bulanan)
+Error in hist.default(mydata3, Nama_Syarikat, Pendapatan_Bulanan) : 
+  'x' must be numeric
+> as.factor(Nama_Syarikat)
+ [1] ABC              Bookstore Timah  Prasa            Delta            Alfa            
+ [6] Gama             Bakeri Hasan     Shel             DV               Viva            
+[11] Kedai Sate Ali   Kedai Runcit Abu Kilang Apel      DM              
+14 Levels: ABC Alfa Bakeri Hasan Bookstore Timah Delta DM DV Gama ... Viva
+> hist(mydata3, Nama_Syarikat, Pendapatan_Bulanan)
+Error in hist.default(mydata3, Nama_Syarikat, Pendapatan_Bulanan) : 
+  'x' must be numeric
+> mydata3 <- arrange(mydata, Pendapatan_Bulanan)
+> mydata3 
+      Nama_Syarikat Pendapatan_Bulanan Bil_Pekerja Kategori_Perniagaan Modal_Bulanan
+1             Delta            3000.00           1                   P       1444.00
+2   Bookstore Timah            3126.60           3                   P       1530.00
+3    Kedai Sate Ali            4321.67           2                   S       1500.00
+4             Prasa            5211.10           1                   S       3211.00
+5              Viva            6011.23           4                   S       5432.31
+6                DV            6251.99           4                   S       4421.00
+7  Kedai Runcit Abu            6743.28           2                   S       2000.00
+8              Alfa           12431.11           2                   P       4372.11
+9               ABC           15214.32           4                   P       5000.00
+10     Bakeri Hasan           16321.00           5                   S       6421.66
+11               DM           26590.12           7                   P       6000.00
+12      Kilang Apel          167223.90         200                   B      48761.00
+13             Shel          176342.11         100                   B      54320.00
+14             Gama          290000.00        1974                   P     100000.00
+   Status_Syarikat Status_Penarafan
+1                0                B
+2                0                B
+3                0               B-
+4                0               B-
+5                0               C-
+6                0                C
+7                0                B
+8                0               A+
+9                0                A
+10               0                A
+11               0                A
+12               1               A+
+13               1               A+
+14               1               A+
+> Income_More_10k <- mydata$Pendapatan_Bulanan > 10000
+> Income_More_10k
+ [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE
+> 
+> mydata4 <- mydata%>%mutate(Income_More_10k=high_income)
+> mydata4
+      Nama_Syarikat Pendapatan_Bulanan Bil_Pekerja Kategori_Perniagaan Modal_Bulanan
+1               ABC           15214.32           4                   P       5000.00
+2   Bookstore Timah            3126.60           3                   P       1530.00
+3             Prasa            5211.10           1                   S       3211.00
+4             Delta            3000.00           1                   P       1444.00
+5              Alfa           12431.11           2                   P       4372.11
+6              Gama          290000.00        1974                   P     100000.00
+7      Bakeri Hasan           16321.00           5                   S       6421.66
+8              Shel          176342.11         100                   B      54320.00
+9                DV            6251.99           4                   S       4421.00
+10             Viva            6011.23           4                   S       5432.31
+11   Kedai Sate Ali            4321.67           2                   S       1500.00
+12 Kedai Runcit Abu            6743.28           2                   S       2000.00
+13      Kilang Apel          167223.90         200                   B      48761.00
+14               DM           26590.12           7                   P       6000.00
+   Status_Syarikat Status_Penarafan Income_More_10k
+1                0                A            TRUE
+2                0                B           FALSE
+3                0               B-           FALSE
+4                0                B           FALSE
+5                0               A+            TRUE
+6                1               A+            TRUE
+7                0                A            TRUE
+8                1               A+            TRUE
+9                0                C           FALSE
+10               0               C-           FALSE
+11               0               B-           FALSE
+12               0                B           FALSE
+13               1               A+            TRUE
+14               0                A            TRUE
+> 
+> hist(Pendapatan_Bulanan)
+> hist(Nama_Syarikat)
+Error in hist.default(Nama_Syarikat) : 'x' must be numeric
+> 

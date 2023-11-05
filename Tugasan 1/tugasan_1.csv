@@ -1,0 +1,24 @@
+"Nama
+Syarikat","Pendapatan
+Bulanan (RM)","Bilangan
+Pekerja","Kategori Perniagaan
+(1. Company = P,
+2. Limited = B,
+3. Private = S)","Modal
+Bulanan(RM)","Status Syarikat(1 = Large, 0 = Small)",Status Penarafan
+ABC,15214.32,4,P,5000.00,0,A
+"Bookstore
+Timah",3126.60,3,P,1530.00,0,B
+Prasa,5211.10,1,S,3211.00,0,B-
+Delta,3000.00,1,P,1444.00,0,B
+Alfa,12431.11,2,P,4372.11,0,A+
+Gama,290000.00,1974,P,100000.00,1,A+
+Bakeri Hasan,16321.00,5,S,6421.66,0,A
+Shel,176342.11,100,B,54320.00,1,A+
+DV,6251.99,4,S,4421.00,0,C
+Viva,6011.23,4,S,5432.31,0,C-
+Kedai Sate Ali,4321.67,2,S,1500.00,0,B-
+"Kedai Runcit
+Abu",6743.28,2,S,2000.00,0,B
+Kilang Apel,167223.90,200,B,48761.00,1,A+
+DM,26590.12,7,P,6000.00,0,A
